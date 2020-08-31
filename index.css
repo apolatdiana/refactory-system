@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center-center;
+ 
+  font-family: sans-serif;
+
+}
+
+.menu-bar {
+background:rgb(0,100,0);
+
+justify-content: space-between;
+color: white;
+display: flex
+}
+.refactory{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #ffffff; 
+}
+
+.menu-bar ul li{
+  width: 120px;
+  margin:15px;
+  padding:15px;
+}
+
+.menu-bar ul li a{
+  text-decoration: none;
+  color:#fff
+
+}
+
+.active, .menu-bar ul li:hover{
+  background-color: #2bab0d;
+  border-radius: 3px;
+
+}
+
+.fa-angle-right{
+  float: right;
+}
+.toggle-button{
+  position:absolute;
+  top: 75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:21;
+}
+
+  .toggle-button .bar{
+    height:3px;
+    width: 100px;
+    background-color: white;
+    border-radius:10px;
+  }
+  @media(max-width: 400px){
+    toggle-button{
+      display:flex;
+    }
+    
+  }
+
+
+
+.sub-menu-1{
+  display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+  display:block;
+  position: absolute;
+  background-color: #2bab0d;
+margin-bottom: 15px;
+margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin:10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding:10px;
+  border-bottom: 1px dotted #fff;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: #b2ff00;
+}
+
+.sub-menu-2{
+  display:none
+}
+hover-me:hover .sub-menu-2{
+  position: absolute;
+  display:block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: rgb(0,100,0)
+
+}
+.footer-bottom {
+  background-color: #303036;  
+  color: #d3d3d3;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  padding-top: 20px;
+ 
+}
